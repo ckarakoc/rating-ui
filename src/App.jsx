@@ -3,7 +3,7 @@ import Rating from './components/Rating';
 const App = () => {
     return (
         <div>
-            <Rating/>
+            <Rating heading="Rate your Experience" color="gold"/>
         </div>
     );
 };
