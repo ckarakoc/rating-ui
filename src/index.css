@@ -46,3 +46,111 @@ body {
     font-weight: bold;
     color: #333;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: #0080ff;
+}
+
+.rating-container {
+    text-align: center;
+    padding: 40px 30px;
+    border: 1px solid #ddd;
+    width: 400px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    margin: 15px;
+}
+
+.star {
+    transition: color 0.2s ease-in-out;
+    color: #ccc;
+}
+
+.star.active {
+    color: gold;
+}
+
+.feedback {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.submit-btn {
+    margin-top: 15px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.submit-btn:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.submit-btn:hover:not(:disabled) {
+    background-color: #0056b3;
+}
+/* Modal Styling */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.modal h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.close-btn {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+    border-radius: 5px;
+}
+
+.close-btn:hover {
+    background-color: darkred;
+}
